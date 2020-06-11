@@ -2,7 +2,7 @@
 function generate(){
 //password length is random between 8 to 128
 var min = 8;
-var max = 128;
+var max = 129;
 let passlength = Math. floor (Math.random() * (max - min) + min);
 
 //let passlength = 10;
@@ -17,9 +17,10 @@ for(var i = 0; i <= passlength; i++){
 document.getElementById("generatedpassword").value = password;
 
 }
-/*copy password to clipboard
-function copypassword(){
+//copy password to clipboard
+function copypassword()
+{
     document.getElementById("generatedpassword").select();
     document.execCommand("Copy");
     alert("Your password is copied to clipboard");
-}*/
+}
